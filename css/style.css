@@ -46,9 +46,9 @@ nav{
     
 }
 
-div.immagine-principale{
-    border: black 3px solid;
-   
+#immagine_principale{
+    border: solid black 3px;
+    max-width: 100%;
 }
 
 #traduction{
