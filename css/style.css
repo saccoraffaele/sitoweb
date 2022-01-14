@@ -1,11 +1,16 @@
 
 
-nav span img{
+nav div img{
    border: 3px solid rgb(8, 4, 4);
    width: 22px;
    height: 35px;
    size: 22px;
    
+   
+}
+ul{
+    display: flex;
+    align-items: center;
 }
 
 
