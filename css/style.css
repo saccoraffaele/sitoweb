@@ -1,7 +1,7 @@
 
 
 nav div img{
-   border: 3px solid rgb(8, 4, 4);
+   
    width: 22px;
    height: 35px;
    size: 22px;
@@ -16,35 +16,55 @@ ul{
 
 nav ul li{
     display: inline-block;
-    margin-right: 2.5rem;
-    border: solid green 3px;
+    padding: 10px;
+    
+    margin-left: 20px;
     
      
 }
 
+i{
+    font-size: 30px;
+    
+}
+
+span i{
+
+    position: relative;
+    top: 10px;
+
+    padding: 5px;
+}
+
+
+
 #search{
     display: inline-block;
-    border: rgb(40, 6, 235) 3px solid;
-    margin-left: 450px;
+    
+    margin-left:500px;
     
 }
 
 #cerca{
-    border: solid black 3px;
-    border-radius: 10px;
+   
+    border-radius: 3px;
     padding: 10px;
-    background: white;
+    border-color: #cecdcc;
+    position: relative;
+    right: 20px;
     
 }
 
 #lingua{
-    border: brown solid 3px;
     
+    text-transform: none;
 }
+
+
 
 nav{
     position: fixed;
-    border: solid 3px yellow; 
+    border: solid 1px #d8d8d7; 
     background: white; 
     width: 100%; 
     top: 0px;
@@ -52,8 +72,9 @@ nav{
 }
 
 #immagine_principale{
-    border: solid black 3px;
+    
     max-width: 100%;
+    
 }
 
 #traduction{
