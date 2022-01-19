@@ -55,9 +55,9 @@ span i{
     
 }
 
-#lingua{
-    
-    text-transform: none;
+span a{
+    color: #272626;
+    text-decoration: none;
 }
 
 
@@ -81,10 +81,21 @@ nav{
     text-align: center;
 }
 
+div a{
+    text-decoration:none;
+    color: #272626;
+}
+
 #welcome{
     text-align: center;
 }
 
 .button{
-    text-align: center;
+   
+    border: 1px solid #ccc9c9;
+    padding: 10px;
+    position: absolute;
+    margin-left: 700px;
+    border-radius: 3px;
 }
+
