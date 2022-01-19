@@ -1,5 +1,3 @@
-
-
 nav div img{
    
    width: 22px;
@@ -99,3 +97,117 @@ div a{
     border-radius: 3px;
 }
 
+/* Main style */
+ 
+ .container{
+     padding: 16px;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
+     margin: auto;
+ }
+ 
+ .start{
+     display: flex;
+     align-items: center;
+     margin-bottom: 3rem;
+     margin-top: 1rem;
+     text-align: justify;
+     justify-content: center;
+     margin-right: 0;
+     font-family: system-ui,
+     -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,
+     Helvetica,Arial,sans-serif,Apple Color 
+     Emoji,Segoe UI Emoji,Segoe UI Symbol;
+ }
+ 
+ 
+ 
+ .box-4{
+    display: flex;
+    flex: 1 1 372px;
+    padding: 0;
+    margin: 0;
+    align-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    -webkit-box-pack: justify;
+    
+    
+    
+   
+ }
+ 
+ @media only screen and (min-width: 1350px) {
+ 
+     .box-4{
+         max-width: 1200px;
+     }
+      
+  }
+  @media only screen and (max-width:900px ) {
+ 
+      .robo{
+         margin: 0px;
+         min-width: (100%, 240px);
+      }
+  }
+ 
+ 
+ .imgx4{
+     display: inline-block;
+     min-width: 300px;
+     text-align: left;
+     background: radial-gradient(46.28% 66.31% at 66.95% 58.35%,
+       rgb(230, 230, 247) 0%,
+       rgb(231, 237, 250) 50%, 
+       rgb(233, 251, 250) 100%);
+     margin: 16px;
+     
+     border-radius: 2px;
+ }
+ 
+ .robo{
+     
+     display: flex;
+     flex-direction: column;
+     max-width: 400px;
+     align-items: center;
+     box-shadow: rgb(0 0 0 / 7%) 0px 14px 66px, 
+     rgb(0 0 0 / 3%) 0px 10px 17px, 
+     rgb(0 0 0 / 5%) 0px 4px 7px;
+     border-radius: 2px;
+     justify-items: center;
+   
+ }
+ 
+ .robo a{
+     text-decoration: none;
+     color: white;
+ }
+ 
+ .robo:hover{
+     
+     box-shadow: rgb(243 15 15) 0px 8px 17px;
+     background: rgb(242, 242, 242);
+     transition: transform 0.1s ease 0s;
+     transform: scale(1.02);
+     
+ }
+ 
+ .testo{
+     display: flex;
+     flex-direction: column;
+     background-color: rgb(34, 34, 34);
+     padding: 24px;
+     min-height: 140px;
+     max-width: 500px;
+     align-items: left;
+     justify-content: center;    
+     
+ }
+ 
+ /* Fine Main style */
