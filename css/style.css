@@ -1,3 +1,26 @@
+
+
+nav div img{
+   
+   width: 22px;
+   height: 35px;
+   size: 22px;
+   
+   
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    
+    margin-left: 20px;
+    
+
  nav ul li{
      display: inline-block;
      margin-right: 2.5rem;
@@ -44,26 +67,88 @@
      background: white; 
      width: 100%; 
      top: 0px;
+
      
- }
- 
- #immagine_principale{
-     border: solid black 3px;
-     max-width: 100%;
- }
- 
- #traduction{
-     text-align: center;
- }
- 
- #welcome{
-     text-align: center;
- }
- 
- .button{
-     text-align: center;
- }
-  /* Main style */
+}
+
+i{
+    font-size: 30px;
+    
+}
+
+span i{
+
+    position: relative;
+    top: 10px;
+
+    padding: 5px;
+}
+
+
+
+#search{
+    display: inline-block;
+    
+    margin-left:500px;
+    
+}
+
+#cerca{
+   
+    border-radius: 3px;
+    padding: 10px;
+    border-color: #cecdcc;
+    position: relative;
+    right: 20px;
+    
+}
+
+span a{
+    color: #272626;
+    text-decoration: none;
+}
+
+
+
+nav{
+    position: fixed;
+    border: solid 1px #d8d8d7; 
+    background: white; 
+    width: 100%; 
+    top: 0px;
+    
+}
+
+#immagine_principale{
+    
+    max-width: 100%;
+    
+}
+
+#traduction{
+    text-align: center;
+}
+
+div a{
+    text-decoration:none;
+    color: #272626;
+}
+
+#welcome{
+    text-align: center;
+}
+
+.button{
+   
+    border: 1px solid #ccc9c9;
+    padding: 10px;
+    position: absolute;
+    margin-left: 700px;
+    border-radius: 3px;
+}
+
+
+/* Main style */
  
  .container{
      
@@ -180,6 +265,7 @@
    
 }
  
+
 /* Style banner - Start. */
 
 .banner{
@@ -709,5 +795,6 @@ footer section:first-of-type {
 #footer-inferiore div {
   text-align: left;
 }
+
 
  /* Fine Main style */
