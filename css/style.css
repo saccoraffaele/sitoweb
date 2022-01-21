@@ -641,6 +641,73 @@
     box-shadow: rgb(210 210 249) 4px 4px 0px 0px;
 }
 
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+}
 
+footer {
+  padding: 150px;
+}
+
+
+
+
+/* Dettagli */
+svg {
+  fill: rgb(178, 178, 178);
+  padding-top: 10px;
+}
+
+svg:hover {
+  cursor: pointer;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-top: 15px;
+  font-size: 0.8em;
+}
+
+footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: rgb(28, 28, 225);
+}
+
+
+
+/* ===== Contenitore superiore del footer ===== */
+footer section:first-of-type {
+  padding: 40px; 
+  display: flex;
+  justify-content: space-between;
+}
+
+#update {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(102, 102, 102);
+  padding-left: 14px;
+}
+
+
+
+/* ===== Contenitore inferiore del footer ===== */
+#footer-inferiore {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+
+#footer-inferiore div {
+  text-align: left;
+}
 
  /* Fine Main style */
