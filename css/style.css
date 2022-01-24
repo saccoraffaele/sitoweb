@@ -150,6 +150,21 @@ div a{
 
 /* Main style */
  
+main{
+    position: relative;
+    margin: 0px auto;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+@media  screen and (max-width: 1024px) {
+    main{
+     max-width: 1504px;
+    }
+    
+}
+
  .container{
      
      padding: 16px;
@@ -200,6 +215,8 @@ div a{
     }
      
  }
+ 
+ 
 
 
 .containerbox a:hover{
@@ -269,17 +286,18 @@ div a{
 /* Style banner - Start. */
 
 .banner{
+    
     background: rgb(204, 252, 255);
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     flex-direction: row-reverse;
-    padding-left: 2rem;
     width: 100%;
     height: 720px;
-    margin-top: -1px;
+    margin-top: 3rem;
     border-top: 1px solid rgb(51, 51, 51);
     border-bottom: 1px solid rgb(51, 51, 51);
+
 
 }
 
@@ -450,6 +468,7 @@ div a{
     transform: translateZ(0);
     display: flex;
     height: fit-content;
+   
     
 
 }
@@ -672,40 +691,116 @@ div a{
 }
 
 
+@media screen and (max-width:1024px) {
+
+    .banner, .banner2, .banner3, .banner4, .banner5{
+    flex-direction: column-reverse;
+    height: 100%;
+    padding-top: 2rem;
+    padding-right: 0rem;
+    padding-bottom: 2rem;
+    -webkit-box-align: center;
+    align-items: center;
+    }
+
+    
+  
+}
+
 .boxfinestra{
-    margin-left: 4rem;
-    max-width: 624px;
+    margin-left: 3rem;
     border: 1px solid rgb(51, 51, 51);
     box-shadow: rgb(210 210 249) 4px 4px 0px 0px;
     height: max-content;
+    width: 700px;
 }
 
 .navboxfinestra{
-    background: rgb(247, 247, 247);
-    padding: 1rem;
+    background: rgba(247, 247, 247, 40%);
     border-bottom: 1px solid rgb(51, 51, 51);
-    
+    width: 100%;
+    height: 60px;
     display: flex;
     flex-direction: row-reverse;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
+.dot{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+.dot1{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(212, 101, 102);
+    margin-right: 0.5rem;
+}
+.dot2{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(255, 231, 142);
+    margin-right: 0.5rem;
+    
+}
+.dot3{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(111, 196, 160);
+    margin-right: 0.5rem;
+}
 
 .containerfinestra{
     cursor: pointer;
     text-decoration: none;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     -webkit-box-pack: justify;
     justify-content: space-between;
     box-shadow: rgb(0 0 0 / 10%) 0px 1px 1px;
-    margin-bottom: 1px;
-    padding: 1rem;
-    
+    width: 100%;
     color: rgb(51, 51, 51) !important;
+    background-color: white;
+    justify-content: center;
+}
+
+.testofinestra{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 1rem;
+    align-content: flex-start;
+}
+
+.titoloparafine, .paragrafofinestra{
+    font-family: system-ui,
+    -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,
+    Helvetica,Arial,sans-serif,Apple Color 
+    Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-weight: 400;
+}
+
+.titoloparafine{
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.paragrafofinestra{
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testofinestra:hover{
+    background: rgb(209, 209, 249);
+    color: rgb(0, 0, 0) !important;
 }
 
 
@@ -722,10 +817,17 @@ div a{
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
- .btn5:hover{
+.btn5:hover{
     background-color: rgba(28, 28, 225, 0.8);
     box-shadow: rgb(210 210 249) 4px 4px 0px 0px;
 }
+
+
+
+
+/* Fine Main style */
+
+
 
 body {
   margin: 0;
@@ -772,7 +874,9 @@ footer a:hover {
 footer section:first-of-type {
   padding: 40px; 
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 #update {
@@ -786,15 +890,18 @@ footer section:first-of-type {
 
 /* ===== Contenitore inferiore del footer ===== */
 #footer-inferiore {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 1rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+#footer-inferiore ul{
+    display: block;
 }
 
 #footer-inferiore div {
   text-align: left;
 }
 
-
- /* Fine Main style */
